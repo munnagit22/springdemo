@@ -11,9 +11,9 @@ public class TestController {
 	
 	
 	@GetMapping("/message/{name}")
-	public ResponseEntity<String> displayMessage(@PathVariable String name)
+	public ResponseEntity<String> greetMessage(@PathVariable String name)
 	{
-		return new ResponseEntity<String>("Welcome :"+name,HttpStatus.OK);
+		return new ResponseEntity<String>("Good Morning  :"+name,HttpStatus.OK);
 	}
 
 }
