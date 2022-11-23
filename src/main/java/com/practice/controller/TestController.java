@@ -13,7 +13,7 @@ public class TestController {
 	@GetMapping("/message/{name}")
 	public ResponseEntity<String> greetMessage(@PathVariable String name)
 	{
-		return new ResponseEntity<String>("Good Morning  :"+name,HttpStatus.OK);
+		return new ResponseEntity<String>("Good Evening  :"+name,HttpStatus.OK);
 	}
 
 }
